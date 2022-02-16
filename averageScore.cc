@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+#define AverageOne 3.5
+#define AverageTwo 7.5
+#define TotalScore 11
+
 int main() {
 	double scoreOne;
 	double scoreTwo;
@@ -11,8 +15,8 @@ int main() {
 	printf("Escreva a segunda nota: ");
 	scanf("%lf", &scoreTwo);
 	
-	result = ((scoreOne * 3.5) + (scoreTwo * 7.5)) / 11;
+	result = ((scoreOne * AverageOne) + (scoreTwo * AverageTwo)) / TotalScore;
 	
-	printf("O resultado foi: %lf", result);
-	return 0;
+	printf("O resultado foi: %.5lf", result);
+ 	return 0;
 }
